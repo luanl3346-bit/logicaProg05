@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Livre</title>
+
+    <!-- Vinculação do CSS externo-->
+     <link rel="stylesheet" href="./css/style.css">
+     
+
+</head>
+<body id="home">
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <button type="submit" class="btn-carrinho"><a href="./carrinho.html"><img src="./css/img/imagem_carrinho.png" width="40" height="40"></a></button>
+        <button type="submit" class="btn-cadastro"><a href="./cadastro.html">Cadastre-se</a></button>
+        <h1>Amazon Livre</h1>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#prod">Produtos</a></li>
+                <li><a href="#categ">Categorias</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <!-- Bannner -->
+        <section class="banner" id="prod" aria-label="Destaque principal">
+            <h2>Promoções Imperdíveis</h2>
+            <p>Os melhores produtos com os melhores preços.</p>
+        </section>
+        <br>
+        <!--Produtos com imagem -->
+        <section class="products">
+            
+            <article class="product-card">
+                <h3 class="novo">NEW!</h3>
+                <h3>Camiseta Santos</h3>
+                <img src="./css/img/camisa_neymar2-removebg-preview.png" height="200" width="200"
+                alt="Camiseta retro oficial Santos Futebol Clube (azul)">
+                <p>Camiseta Retro Santos 2011.</p>
+                <button type="submit" class="btn-adicionar">Adicionar ao carrinho</button>
+            </article>
+        
+            <article class="product-card">
+                <h3>Smartphone</h3>
+                <img src="./css/img/iphone-removebg-preview(1).png" height="200" width="200" 
+                alt="Imagem de um smartphone moderno">
+                <p>Smartphone com alta tecnologia.</p>
+                <button type="submit" class="btn-adicionar">Adicionar ao carrinho</button>
+            </article>
+
+            <article class="product-card">
+                <h3>Notebook Gamer</h3>
+                <img src="./css/img/notebook_gamer-removebg-preview.png" height="200" width="200"
+                alt="Imagem de um Notebook Gamer moderno">
+                <p>Notebook Gamer de última geração.</p>
+                <button type="submit" class="btn-adicionar">Adicionar ao carrinho</button>
+            </article>
+
+            <article class="product-card">
+                <h3>Óculos de sol</h3>
+                <img src="./css/img/oculos-removebg-preview.png" height="200" width="200"
+                alt="Óculos de sol oakley masculino">
+                <p>Óculos de Sol Masculino Oakley.</p>
+                <button type="submit" class="btn-adicionar">Adicionar ao carrinho</button>
+            </article>
+
+            <article class="product-card">
+                <h3 class="novo">NEW!</h3>
+                <h3>SmartWatch</h3>
+                <img src="./css/img/relogio-removebg-preview.png" height="200" width="200"
+                alt="SmartWatch Garmim Forerunner 55 (Branco)">
+                <p>SmartWatch Garmim.</p>
+                <button type="submit" class="btn-adicionar">Adicionar ao carrinho</button>
+            </article>
+
+            <article class="product-card">
+                <h3 class="novo">NEW!</h3>
+                <h3>Pilha</h3>
+                <img src="./css/img/pilha_duracel-removebg-preview.png" height="200" width="200"
+                alt="Duracell Pilhas Alcalinas AA Pequena Pack 24 Unidades">
+                <p>Duracell Pilhas Alcalinas.</p>
+                <button type="submit" class="btn-adicionar">Adicionar ao carrinho</button>
+            </article>
+
+            <article class="product-card">
+                <h3 class="novo">NEW!</h3>
+                <h3>Perfume Importado</h3>
+                <img src="./css/img/perfume11-removebg-preview.png" height="200" width="100"
+                alt="Perfume Masculino Importado">
+                <p>Yves Saint Laurent Parfum</p>
+                <button type="submit" class="btn-adicionar" id="categ">Adicionar ao carrinho</button>
+            </article>
+
+        </section>
+        
+        <h2 class="categoria-produto">Categoria de Produtos</h2>
+        <section class="outros-produtos" >    
+                <article class="outros-cards">
+                <button type="submit" class="btn-produto">Informatica</button>
+                <img src="./css/img/notebook1-removebg-preview.png" height="150" width="150"
+                alt="Notebook gamer Acer Nitro 5 Intel Core i5 Linux Preto-Vermelho">
+                </article>
+
+                <article class="outros-cards">
+                <button type="submit" class="btn-produto">Roupas e Acessórios</button>
+                <img src="./css/img/camiseta_simp-removebg-preview.png" height="150" width="150"
+                alt="Camiseta do Simpsons Branca Estampada">
+                </article>
+
+                <article class="outros-cards">
+                <button type="submit" class="btn-produto">Celulares e Telefones</button>
+                <img src="./css/img/iphone17-removebg-preview.png" height="150" width="150"
+                alt="Imagem de um smartphone moderno">
+                </article>
+
+                <article class="outros-cards">
+                <button type="submit" class="btn-produto">Beleza e Cuidado Pessoal</button>
+                <img src="./css/img/phantom-removebg-preview.png" height="150" width="120"
+                alt="Perfume Masculino Importado">
+                </article>
+
+
+            </fieldset>
+
+
+
+        </section>
+
+        <br>
+
+        <section id="sobre" class="about">
+            <div class="about-content">
+                <!-- Vídeo Promocional -->
+                <section class="promo-video">
+                    <h2>Conheça nossa loja</h2>
+                    <video controls width="600" height="400">
+                        <source src="./css/img/video.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeo.
+                    </video>
+                </section>
+
+                <br>
+
+                <!-- Integração com Iframe -->  
+                <section class="location">
+                    <h2>Nossa Localização</h2>
+
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d582.1910867558563!
+                            2d-43.19894727887821!3d-22.9101752731542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!
+                            4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b9b61fa!2sEdif%C3%ADcio%
+                            20Eco%20Sapuca%C3%AD!5e1!3m2!1spt-BR!2sbr!4v1785257312149!5m2!1spt-BR!2sbr"
+                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin" width="600" height="400"
+                            title="Maps">
+                    </iframe>
+                </section>
+            </div>
+            <h2 class="about-title">Sobre a Loja</h2>
+            <p class="about-text">Somos uma loja dedicada a oferecer
+                 produtos de qualidade com os melhores preços.</p>
+        </section>
+
+        <br>
+
+    
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Minha Loja Online</p>
+    </footer>
+
+
+ <script src="./js/script.js"></script>
+</body>
+
+</html>
+

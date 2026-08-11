@@ -1,0 +1,316 @@
+:root{
+    --primary-color: #1b325f; /* Cor dos Cards */
+    --secundary-color: #3a89c9; /* Cor da borda dos Cards */
+    --dark-color: #000;
+    --white-color: #fff;
+
+    --radius: 8px;
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #9cc4e4;
+    color: var(--white-color);
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #3a89c9; color: var(--white-color);
+    position: fixed;
+    padding: 15px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Banner */
+.banner {
+    background-color: #3a89c975;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    animation: fadeIn 2s ease forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Seção inteira de produtos */
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+    padding: 30px;
+
+    animation: fadeIn 3s ease forwards; /* Animação */
+}
+
+/* Cards de produtos */
+.product-card {
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    border: 3px solid var(--secundary-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Seção inteira (Categoria Produtos) */
+.outros-produtos { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 15px;
+
+    
+    margin-bottom: 130px; 
+    animation: fadeIn 3s ease forwards; /* Animação */
+}
+
+.outros-cards:hover {
+    transition: all 0.4s;
+    transform: translateY(-15px);
+    box-shadow: 0 4px 10px #000000;
+}
+
+/* Legenda dos Produtos */
+.categoria-produto {
+    font-family: Arial, sans-serif;
+    background-color: #9cc4e4; color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+/* Cards Categoria de Produtos */
+.outros-cards {
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    border: 3px solid var(--secundary-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* badge de produto */
+.novo {
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    padding: 4px 8px;
+    color: #ff2f00; background-color: #ffd5002b;
+    border-radius: 4px ;    
+}
+
+/* Hover nos produtos */
+.product-card:hover {
+    transition: all 0.4s;
+    transform: translateY(-15px);
+    box-shadow: 0 4px 10px #000000;
+}
+
+/* Título */
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Menu */
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.nav-menu a {
+    color: var(--white-color);
+    text-decoration: none;
+    transform: scale(1.02);
+}
+
+
+/* Hover no menu */
+.nav-menu a:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+/* Espaço por causa do header fixo */
+main {
+    padding-top: 80px;
+}
+
+/* Clique no botão "Adicionar ao carrinho" */
+.btn-adicionar {
+    color: #ff2f00; background-color: #ffd5002b;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 4px;
+    right: 50px;
+    margin-top: 10px;
+}
+
+/* Passar o mouse em cima do botao e ele cresce */
+.btn-adicionar:hover {
+    transform: scale(1.05);
+}
+
+/* Ao clicar o botao movimenta */
+.btn-adicionar:active {
+    transform: scale(0.8);
+}
+
+/* Botão do Carrinho */
+.btn-carrinho {
+    position: absolute;
+    top: 15px;
+    right: 2cm;
+    padding: 1px 1px;
+    color: var(--white-color); background-color: #3a89c9;
+}
+
+/* Botão de Cadastro */
+.btn-cadastro {
+    position: absolute;
+    top: 15px;
+    left: 2cm;
+    padding: 15px 10px;
+    background-color: #3a89c9; color: var(--white-color);
+    text-decoration: none; 
+}
+
+.btn-cadastro:hover {
+    transform: scale(1.05);
+}
+
+.btn-produto {
+    color: var(--white-color); background-color: var(--primary-color);
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.btn-produto:hover{
+    transform: scale(1.05);
+}
+
+.btn-produto:active {
+    transform: scale(0.8);
+}
+
+
+/* Rodapé */
+.footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Responsividade */
+/* Desktop (>= 1024px) */
+@media (min-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(5, 1fr) ;
+    }
+}
+
+/* Tablet (<= 768px) */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animação do site */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* container só para vídeo + localização */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* cards */
+.promo-video, .location {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--secundary-color);
+    text-align: center;
+    border: 2px solid var(--secundary-color);
+    
+}
+
+/* Títulos */
+.promo-video h2, .location h2 {
+    margin-bottom: 10px;
+    color: var(--white-color);
+}
+
+/* mídias responsivas */
+.promo-video video, .location iframe {
+    width: 80%;
+    max-width: 500%;
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+}
+
+/* DESKTOP: lado a lado */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+    }
+
+    .promo-video, .location {
+        flex: 1;
+    }
+}
+
+/* Texto sobre centralizado */
+.about-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-text {
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+

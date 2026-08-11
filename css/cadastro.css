@@ -1,0 +1,128 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #9cc4e4;
+    color: #ffffff;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #3a89c9;
+    color: white;
+    position: fixed;
+    padding: 15px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Banner */
+.banner {
+    background-color: #3a89c975;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Título */
+.h2 {
+    margin-bottom: 10px;
+}
+
+
+/* Rodapé */
+.footer {
+    background-color: #222;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 0px;
+}
+
+/* Menu */
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Menu */
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+        transform: scale(1.02);
+}
+
+/* Hover no menu */
+.nav-menu a :hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+/* Espaço por causa do header fixo */
+main {
+    margin-top: 100px;
+}
+
+a:hover {
+    background-color: #000000;
+    transition: background 1.5s;
+}
+
+.cadastro {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 200px;
+    margin-bottom: 217px;
+}
+
+.dados {
+    margin-bottom: 10px;
+    padding: 10px 60px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 500px;
+    
+    justify-content: center;
+    background-color: #3a89c9;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    
+}
+
+.dados input{
+    padding: 10px;
+    border-radius: 10px;
+
+    border: 1px solid #ccc;
+}
+
+.dados label {
+    padding: 5px;
+
+}
+
+.interes {
+    padding: 10px 10px;
+    font-size: large;
+    background-color: #3a89c9;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    
+}
+
+#mensagem {
+    margin-top: 10px;
+}

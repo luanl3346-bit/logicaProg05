@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+
+    <!-- Vinculação do CSS externo-->
+     <link rel="stylesheet" href="./css/style-bolos.css">
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <headear class="header" id="home">
+        <h1>Minha Loja Online</h1>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </headear>
+    
+    <main>
+
+        <!-- Bannner -->
+        <section class="banner" aria-label="Destaque principal">
+            <h2>Produtos em Destaque</h2>
+            <p>Os produtos campeões em vendas esta semana, estão em oferta!!!</p>
+        </section>
+        <br>
+        <!--Produtos com imagem -->
+        <section id="produtos">
+            <h2>Produtos</h2>
+            
+            <article class="product-card">
+                <h3>Camiseta</h3>
+                <img src="./css/img/camisa.jpg" height="300" width="300"
+                alt="Camiseta casual confotável">
+                <p>Camiseta de algodão premium.</p>
+            </article>
+            
+            <br>
+
+            <article class="product-card">
+                <h3>Smartphone</h3>
+                <img src="./css/img/iphone.jpg" height="300" width="300" 
+                alt="Imagem de um smartphone moderno">
+                <p>Smartphone com alta tecnologia.</p>
+            </article>
+
+        </section>
+
+        <br>
+        <!-- Vídeo Promocional -->
+         <section class="promo-video">
+            <h2>Conheça nossa loja</h2>
+            <video controls width="500" height="300">
+                <source src="./css/img/video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+         </section>
+
+         <br>
+
+        <!-- Integração com Iframe -->  
+        <section class="location">
+            <h2>Nossa Localização</h2>
+
+            <iframe src=
+            "https://www.youtube.com/embed/a4cA0ET9DRY?si=WXRjD9ngmuBGpHN7" width="500" 
+                height="300" title="Vídeo externo">
+            </iframe>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d582.1910867558563!
+                    2d-43.19894727887821!3d-22.9101752731542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!
+                    4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b9b61fa!2sEdif%C3%ADcio%
+                    20Eco%20Sapuca%C3%AD!5e1!3m2!1spt-BR!2sbr!4v1785257312149!5m2!1spt-BR!2sbr"
+                    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin" width="300" height="200"
+                    title="Maps">
+            </iframe>
+        </section>
+
+        <br>
+
+        <!-- Formulário -->
+         <section id="contato">
+            <h2>Cadastro / Contato</h2>
+         
+            <form claass="form-contact">
+
+                <fieldset>
+                    <legend>Dados do Usuário</legend>
+
+                    <!-- Nome -->
+                    <label for="Nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder=
+                    "Digite seu nome">
+
+                    <!-- Email -->
+                    <label for="Email">Email:</label>
+                    <input type="text" id="gmail" name="gmail" required placeholder=
+                    "exemplo@gmail.com">
+
+                    <!-- Senha -->
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required minlength=
+                    "6" required placeholder="Digite sua senha">
+
+                    <!-- Idade -->
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" required>
+                </fieldset>
+
+                <fieldset>
+                    <!-- Select -->
+                    <label for="categoria">Categoria de interesse:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" selected disabled>Selecione</option>
+                        <option value="eletronicos">Eletrônicos</option>
+                        <option value="roupas">Roupas</option>
+                        <option value="acessorios">Acessórios</option>
+                    </select>
+                    
+                    <!-- Checkbox -->
+                    <p>Preferências:</p>
+                    <label>
+                        <input type="checkbox" name="promo"> Receber promoções
+                    </label>
+                    <label>
+                        <input type="checkbox" name="novidades"> Receber novidades
+                    </label>
+
+                    <!-- Radio -->
+                        <p>Tipo de Cliente:</p>
+                        <label>
+                            <input type="radio" name="tipo" value="pf" required>
+                            Pessoa Física
+                        </label>
+                        <label>
+                            <input type="radio" name="tipo" value="pj" required>
+                            Pessoa Jurídica
+                        </label>
+                </fieldset>
+
+                <!-- Mensagem -->
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4"
+                    required placeholder="Digite sua mensagem">
+                </textarea>
+
+                <!-- Botão -->
+                <button type="submit">Enviar</button>
+            
+            </form>
+         </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Minha Loja Online</p>
+    </footer>
+
+</body>
+
+</html>
+

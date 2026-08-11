@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Livre</title>
+
+    <!-- Vinculação do CSS externo-->
+     <link rel="stylesheet" href="./css/cadastro.css">
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <headear class="header" id="home">
+        
+        <h1>Amazon Livre</h1>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="./teste1.html">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </headear>
+    
+    <main>
+
+        <!-- Bannner -->
+        <section class="banner" aria-label="Destaque principal">
+            <h2>Cadastre-se aqui</h2>
+            <p>Preencha corretamente os campos abaixo para prossegui com o cadastro do usuário.</p>
+        </section>
+        <br>
+        
+        <br>
+
+        <!-- Formulário -->
+         <section class="cadastro">
+            <h1>Dados do Usuário</h1>
+            <br>
+
+            <form class="form-contact">
+
+                <fieldset class="dados">
+                    <!-- Nome -->
+                    <label for="Nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder=
+                    "Digite seu nome">
+
+                    <!-- Email -->
+                    <label for="Email">Email:</label>
+                    <input type="email" id="gmail" name="gmail" required placeholder=
+                    "exemplo@gmail.com">
+
+                    <!-- Senha 
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required minlength=
+                    "6" required placeholder="Digite sua senha">-->
+
+                    <!-- Idade 
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" required> -->
+                </fieldset>
+
+                <fieldset class="interes">
+                    <!-- Select -->
+                    <label for="categoria">Categoria de interesse:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" selected disabled>Selecione</option>
+                        <option value="eletronicos">Eletrônicos</option>
+                        <option value="roupas">Roupas</option>
+                        <option value="acessorios">Acessórios</option>
+                    </select>
+                    
+                    <!-- Checkbox -->
+                    <p>Preferências:</p>
+                    <label>
+                        <input type="checkbox" name="promo"> Receber promoções
+                    </label>
+                    <label>
+                        <input type="checkbox" name="novidades"> Receber novidades
+                    </label>
+
+                    <!-- Radio -->
+                        <p>Tipo de Cliente:</p>
+                        <label>
+                            <input type="radio" name="tipo" value="pf" required>
+                            Pessoa Física
+                        </label>
+                        <label>
+                            <input type="radio" name="tipo" value="pj" required>
+                            Pessoa Jurídica
+                        </label>
+                </fieldset>
+
+                <!-- Mensagem -->
+                <label for="mensagem" id="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4"
+                    required placeholder="Digite sua mensagem">
+                </textarea>
+
+                <!-- Botão -->
+                <button type="submit">Enviar</button>
+            
+            </form>
+         </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Minha Loja Online</p>
+    </footer>
+
+</body>
+
+</html>
+
