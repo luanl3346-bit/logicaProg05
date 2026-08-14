@@ -45,6 +45,78 @@ body{
     align-items: center;
 }
 
+/* Espaço por causa do header fixo */
+main {
+    padding-top: 80px;
+}
+
+.cart {
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: var(--radius);
+    max-width: 500px; /* Centraliza com largura limitada */
+ }
+
+ /* Itens do carrinho */
+ #cart-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+ }
+
+
+
+/* ícone fixo no topo */
+.mini-cart {
+    position: fixed;
+    top: 19px;
+    right: 60px;
+    padding: 8px 12px;
+    background: var(--white-color);
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2000;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}
+
+/* contador de itens */
+#cart-count {
+    background: red;
+    color: var(--white-color);
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-left: 5px;
+}
+
+/* Dropdown do mini carrinho */
+.mini-cart-dropdown {
+    display: none; /* oculto inicialmente */
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 200px;
+    background: var(--white-color);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+    color: #333;
+    text-decoration: none;
+}
+
+/* Mostra ao passar o mouse */
+.mini-cart:hover .mini-cart-dropdown {
+    display: block;
+}
+
+/* Lista interna */
+.mini-cart-dropdown ul {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto; /* Scroll se necessario */
+}
+
 /* Seção inteira de produtos */
 .products {
     display: grid;
@@ -68,6 +140,31 @@ body{
     border: 3px solid var(--secundary-color);
     padding: 20px;
     border-radius: 10px;
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+}
+
+#n7{
+    width: 100px;
+    height: 200px;
+}
+
+#n6 {
+    width: 190px;
+    height: 200px;
+}
+
+.prec {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    padding: 3px 2px 3px ;
+    color: var(--white-color); background-color: #ffd5002b;
+    border-radius: 4px ;
+
 }
 
 /* Seção inteira (Categoria Produtos) */
@@ -155,10 +252,6 @@ nav ul li {
     transform: scale(1.02);
 }
 
-/* Espaço por causa do header fixo */
-main {
-    padding-top: 80px;
-}
 
 /* Clique no botão "Adicionar ao carrinho" */
 .btn-adicionar {
@@ -188,6 +281,10 @@ main {
     right: 2cm;
     padding: 1px 1px;
     color: var(--white-color); background-color: #3a89c9;
+}
+
+.btn-carrinho:hover {
+    display: block;
 }
 
 /* Botão de Cadastro */
@@ -314,3 +411,45 @@ main {
 }
 
 
+/* Card da lista de tarefas */
+.todo {
+    color: var(--white-color); background-color: var(--primary-color);
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    
+    justify-self: center;
+}
+
+.todo input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.todo button {
+    color: var(--white-color); background-color: var(--secundary-color);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+#lista-tarefas {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-tarefas li {
+    background-color: var(--secundary-color);
+    padding: 8px;
+    border-radius: 8px;
+}

@@ -14,10 +14,13 @@
 
     <!-- Cabeçalho -->
     <header class="header">
-        <button type="submit" class="btn-carrinho"><a href="./carrinho.html"><img src="./css/img/imagem_carrinho.png" width="40" height="40"></a></button>
-        <button type="submit" class="btn-cadastro"><a href="./cadastro.html">Cadastre-se</a></button>
+        <!-- Título da Loja -->
         <h1>Amazon Livre</h1>
-
+        
+        <!--<button type="submit" class="btn-carrinho"><a href="./carrinho.html"><img src="./css/img/imagem_carrinho.png" width="40" height="40"></a></button>-->
+        <button type="submit" class="btn-cadastro"><a href="./cadastro.html">Cadastre-se</a></button>
+        
+        <!-- Menu de navegação com links internos (âncoras) -->
         <nav class="nav-menu">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -26,8 +29,28 @@
                 <li><a href="#sobre">Sobre</a></li>
             </ul>
         </nav>
+            <!-- Mini carrinho fixo no topo -->
+            <a href="./carrinho.html" class="mini-cart">
+
+                <!-- ícone do carrinho -->
+                <span>🛒</span>
+
+                <!-- Contador de iten (atualizando via JavaScript) -->
+                <span id="cart-count">0</span>
+
+                <!-- Dropdown do mini carrinho -->
+                <section class="mini-cart-dropdown" id="mini-cart-dropdown">
+
+                    <!-- Lista de produtos adicionados -->
+                     <ul id="mini-cart-list"></ul>
+
+                    <!-- Total do carrinho -->
+                    <p id="mini-total">Total: R$ 0</p>
+                </section>
+            </a>
     </header>
     
+    <!-- Conteúdo Principal -->
     <main>
 
         <!-- Bannner -->
@@ -37,9 +60,9 @@
         </section>
         <br>
         <!--Produtos com imagem -->
-        <section class="products">
+        <section class="products" id="product-list">
             
-            <article class="product-card">
+            <!--<article class="product-card">
                 <h3 class="novo">NEW!</h3>
                 <h3>Camiseta Santos</h3>
                 <img src="./css/img/camisa_neymar2-removebg-preview.png" height="200" width="200"
@@ -97,7 +120,25 @@
                 alt="Perfume Masculino Importado">
                 <p>Yves Saint Laurent Parfum</p>
                 <button type="submit" class="btn-adicionar" id="categ">Adicionar ao carrinho</button>
-            </article>
+            </article>-->
+
+        </section>
+
+        <!-- Carrinho principal -->
+        <section class="cart">
+            <h2>Carrinho</h2>
+
+            <!-- Lista de itens do carrinho -->
+            <ul id="cart-list"></ul>
+
+            <!-- Valor total -->
+            <p id="total">Total: R$ 0</p>
+
+            <!-- Botão de finalização da compra -->
+            <button id="finalizar-compra">Finalizar Compra</button>
+
+            <!-- Mensagem de feedback (sucesso/erro) -->
+            <p id="mensagem-compra"></p>
 
         </section>
         
@@ -126,12 +167,6 @@
                 <img src="./css/img/phantom-removebg-preview.png" height="150" width="120"
                 alt="Perfume Masculino Importado">
                 </article>
-
-
-            </fieldset>
-
-
-
         </section>
 
         <br>
@@ -171,14 +206,29 @@
 
         <br>
 
-    
+        <!-- Lista de tarefas para praticar com DOM -->
+        <section class="todo">
+            <h2>Lista de Tarefas</h2>
+
+            <!-- Campo de entrada -->
+            <input type="text" id="nova-tarefa" placeholder="Digite uma tarefa">
+
+            <!-- Botão para adicionar tarefa -->
+            <button id="adicionar">Adicionar</button>
+
+            <!-- Lista dinâmica -->
+            <ul id="lista-tarefas"></ul>
+        </section>
+
+
+
+
 
     </main>
 
     <footer class="footer">
         <p>&copy; 2026 Minha Loja Online</p>
     </footer>
-
 
  <script src="./js/script.js"></script>
 </body>

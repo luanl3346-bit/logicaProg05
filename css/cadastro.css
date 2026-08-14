@@ -45,7 +45,7 @@ body{
     color: #ffffff;
     text-align: center;
     padding: 15px;
-    margin-top: 0px;
+    margin-top: 80px;
 }
 
 /* Menu */
@@ -78,40 +78,39 @@ a:hover {
 }
 
 .cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     text-align: center;
-    margin-top: 50px;
-    padding: 20px 200px;
-    margin-bottom: 217px;
+    margin-top: 10px;
+    padding: 20px;
 }
 
 .dados {
-    margin-bottom: 10px;
-    padding: 10px 60px;
+    margin-bottom: 50px;
+    padding: 10px 50px;
     font-size: large;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-    width: 90%;
-    max-width: 500px;
+    gap: 8px;
+    width: 450px;
+    justify-self: center;
     
-    justify-content: center;
     background-color: #3a89c9;
     border: 1px solid #000000;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 
 .dados input{
     padding: 10px;
     border-radius: 10px;
-
     border: 1px solid #ccc;
 }
 
 .dados label {
     padding: 5px;
-
 }
 
 .interes {
@@ -120,9 +119,20 @@ a:hover {
     background-color: #3a89c9;
     border: 1px solid #000000;
     border-radius: 10px;
-    
 }
 
 #mensagem {
     margin-top: 10px;
+}
+
+
+.dados button {
+    width: 30%;
+    align-self: center;
+    padding: 10px 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 60px;
+    
+    margin-top: 20px;
 }
